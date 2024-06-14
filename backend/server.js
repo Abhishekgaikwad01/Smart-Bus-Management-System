@@ -33,8 +33,7 @@ app.use("/api/getallusers", userRoutes);
 // })
 
 app.use(notFound);
-app.use(errorHandler);
+app.use(errorHandler);  
 
 const PORT = process.env.PORT || 7000;
-
 app.listen(`${PORT}`, console.log(`server started on port ${PORT}`));
